@@ -1,7 +1,7 @@
 from flask import Flask, jsonify
 
 app = Flask(__name__)
-
+#BLABLA
 # Base de données simple (liste en mémoire)
 servers = [
     {"id": 1, "hostname": "web-prod-01", "ip": "10.0.0.1", "status": "up"},
