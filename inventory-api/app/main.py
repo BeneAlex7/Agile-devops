@@ -2,6 +2,7 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
+
 servers = [
     {"id": 1, "hostname": "web-prod-01", "ip": "10.0.0.1", "status": "up"},
     {"id": 2, "hostname": "db-prod-01", "ip": "10.0.0.2", "status": "down"}
@@ -28,5 +29,3 @@ def get_server(server_id):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
-
-# TEST
